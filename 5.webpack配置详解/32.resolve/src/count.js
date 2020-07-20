@@ -1,0 +1,1 @@
+export const count = (x, y) => x - y
