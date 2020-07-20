@@ -30,17 +30,6 @@ module.exports = {
   module: {
     rules: [
       {
-        // 在package.json配置eslintConfig -->airbnb
-        test: /\.js$/,
-        exclude: /node_modules/,
-        // 优先执行
-        enforce: 'pre',
-        loader: 'eslint-loader',
-        options: {
-          fix: true
-        }
-      },
-      {
         /** oneOf:一种类型的文件只会使用其中的一种进行加载，其他的都不会再去过一遍 
          *  注意：不能有两种或以上的loader处理同一种文件
         */
